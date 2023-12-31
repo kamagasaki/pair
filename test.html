@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login • Kamagasaki</title>
+    <link rel="stylesheet" href="../src/css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+  </head>
+<body>
+    <div id="hasphonenumber" class="w-full h-screen flex items-center justify-center">
+        <div class="w-80 bg-stone-950 rounded-3xl">
+            <div class="">
+
+              <div class="my-6 text-center">
+                <p class="font-extrabold px-8 pt-8 text-xl">Scan QR Code to proceed</p>
+                <p class="px-4 pt-4 text-sm">Use your device to scan the QR code and send a login request to our bot via WhatsApp</p>
+              </div>
+              <div id="whatsauthcounter" hidden>Counter</div>
+              <div class="pt-4 pb-8">
+                    <p class="text-center text-white text-xs">
+                        2023 &copy; Lilium Project. Powered by <a href="https://whatsauth.my.id">WhatsAuth</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/js/login.js" type="module"></script> 
+  </body>
+</html>
