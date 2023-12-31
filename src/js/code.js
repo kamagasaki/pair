@@ -32,10 +32,17 @@ function displayCode(data) {
 
     const card = document.createElement('div');
     card.innerHTML = `
-    <h1>${data.code}</h1>
-    <h3 style="color: white;">Input this token into your Google Cloud Function</h3>
-    <div style="color: white; text-align: center;"> ${token} </div>
-    <h3></h3>
+    <div class="my-10 text-center">
+    <p class="font-extrabold px-8 pt-8 text-2xl">${data.code}</p>
+  </div>
+  <form class="shadow-md rounded px-8">
+    <div class="">
+      <label class="text-center block text-whilte text-sm font-bold mb-2" for="secretBox">
+        Token
+      </label>
+      <input class="shadow appearance-none bg-stone-700 rounded-xl w-full py-2 px-3 text-whilte mb-3 leading-tight focus:outline-none focus:shadow-outline" value="${token}" id="secretBox" type="text">
+    </div>
+  </form>
     `;
     tableBody.appendChild(card);
 }
